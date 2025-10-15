@@ -4,13 +4,12 @@ plugins {
 }
 
 android {
-    namespace 'com.iptv.player'
-    compileSdk 34
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.iptv.player"
         minSdk 21
-        targetSdk 34
+        targetSdk 33
         versionCode 1
         versionName "1.0.0"
     }
@@ -18,7 +17,6 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     
@@ -26,20 +24,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    
-    kotlinOptions {
-        jvmTarget = '1.8'
-    }
-    
-    buildFeatures {
-        viewBinding true
-    }
 }
 
 dependencies {
-    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.leanback:leanback:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'androidx.leanback:leanback:1.2.0-alpha04'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
 }
