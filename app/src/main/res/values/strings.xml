@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">IPTV Player</string>
+    <string name="menu_channels">Canais</string>
+    <string name="menu_favorites">Favoritos</string>
+    <string name="menu_epg">Guia de Programação</string>
+    <string name="menu_settings">Configurações</string>
+    <string name="main_menu">Menu Principal</string>
+</resources>
